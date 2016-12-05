@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+﻿/*using UnityEngine;
 using System.Collections;
 using UnityEditor ;
 
@@ -97,4 +97,4 @@ public class Damage_Control_CSEditor : Editor {
 		EditorGUILayout.Space () ; EditorGUILayout.Space () ;
 		serializedObject.ApplyModifiedProperties () ;
 	}
-}
+}*/
