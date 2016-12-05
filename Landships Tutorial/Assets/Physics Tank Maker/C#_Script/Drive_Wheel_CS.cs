@@ -51,7 +51,7 @@ public class Drive_Wheel_CS : MonoBehaviour
 
     void Update()
     {
-        if (Control_Script.Fix_Useless_Rotaion)
+        if (Control_Script && Control_Script.Fix_Useless_Rotaion)
         {
             if (Control_Script.Parking_Brake)
             {
@@ -76,7 +76,7 @@ public class Drive_Wheel_CS : MonoBehaviour
     void FixedUpdate()
     {
         // Drive.
-        if (Control_Script.Acceleration_Flag)
+        if (Control_Script && Control_Script.Acceleration_Flag)
         { // Acceleration mode.
             Acceleration_Mode();
         }
