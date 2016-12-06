@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class TankLives : MonoBehaviour {
-	int lives = 1;
+	public int lives = 1;
 	public bool isPlayer;
 
 	void Start() {

@@ -12,17 +12,17 @@ public class Game_Controller_CS : MonoBehaviour {
 	int Max_Friendly_Num ;
 	int Max_Hostile_Num ;
 	public Transform [] Operable_Tanks ; // Referred to from RC_Camera.
-	Transform [] Not_Operable_Tanks ;
-	Transform [] Friendly_Body_Transforms ;
-	Transform [] Hostile_Body_Transforms ;
-	MainBody_Setting_CS [] Friendly_Body_Scripts ;
-	MainBody_Setting_CS [] Hostile_Body_Scripts ;
-	AI_CS [] Friendly_AI_Scripts ;
-	AI_CS [] Hostile_AI_Scripts ;
+	public Transform [] Not_Operable_Tanks ;
+	public Transform [] Friendly_Body_Transforms ;
+	public Transform [] Hostile_Body_Transforms ;
+	public MainBody_Setting_CS [] Friendly_Body_Scripts ;
+	public MainBody_Setting_CS [] Hostile_Body_Scripts ;
+	public AI_CS [] Friendly_AI_Scripts ;
+	public AI_CS [] Hostile_AI_Scripts ;
 
 	public float Assign_Count ; // Referred to from AI.
-	float Initial_TimeScale ;
-	RC_Camera_CS RC_Camera_Script ;
+	public float Initial_TimeScale ;
+	public RC_Camera_CS RC_Camera_Script ;
 
 	int Current_ID = 1 ;
 
