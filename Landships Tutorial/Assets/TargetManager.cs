@@ -16,7 +16,9 @@ public class TargetManager : MonoBehaviour {
     }
 
     void Update() {
-
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            Application.LoadLevel("GameScene");
+        }
     }
 
     // Called from TargetHitDetection
