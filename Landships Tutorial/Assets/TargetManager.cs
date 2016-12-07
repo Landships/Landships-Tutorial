@@ -8,11 +8,14 @@ public class TargetManager : MonoBehaviour {
     // and opens the next scene.
 
     int numTargets;
+    public float waitTime = 3f;
 
     // Use this for initialization
     void Start() {
-
         numTargets = 3;
+    }
+
+    void Update() {
 
     }
 
@@ -27,14 +30,20 @@ public class TargetManager : MonoBehaviour {
 
     void allTargetsHit() {
 
-        print("All targets hit");
-        
+        print("All targets hit, starting countdown to scene switch");
+
         // Display message
 
-
-        //Switch scenes
+        StartCoroutine(switchScenes());
     }
-	
+
+    IEnumerator switchScenes()
+    {
+        yield return new WaitForSeconds(waitTime);
+        Application.LoadLevel("GameScene");
+
+    }
+
 
 
 }
